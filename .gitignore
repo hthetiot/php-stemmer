@@ -1,0 +1,21 @@
+# useless files
+.project
+.cache
+.settings
+*.DS_Store
+*~
+*.svn
+._*
+*Thumbs.db
+\#Untitled-*#
+*.marks
+\#*#
+
+# generated files
+*.o
+*.lo
+*.la
+.deps
+.libs
+build
+modules
