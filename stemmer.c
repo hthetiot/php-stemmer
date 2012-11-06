@@ -6,7 +6,7 @@
 #include "php_stemmer.h"
 #include "libstemmer_c/include/libstemmer.h"
 
-static function_entry stemmer_functions[] = {
+static zend_function_entry stemmer_functions[] = {
     PHP_FE(stemword, NULL)
     {NULL, NULL, NULL}
 };
