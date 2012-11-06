@@ -6,6 +6,10 @@ languages using Dr. M.F. Porter's Snowball API.
 
 It has a much simpler API than the stem extension found in pecl.
 
+Licence
+--------------------
+[New BSD License](http://opensource.org/licenses/BSD-3-Clause)
+
 Usage Example
 --------------------
 
@@ -40,4 +44,10 @@ About libstemmer_c
 --------------------
 The stemmer PHP extension uses a modified version of libstemmer_c. 
 It has  replaced the default Dutch stemming algorithm with the much better Kraaij-Pohlmann Dutch stemming algorithm. 
-The modified version of this lib can be downloaded from mysqludf.com.
+The modified version of this lib can be downloaded from [mysqludf.com](http://www.mysqludf.org/lib_mysqludf_stem/).
+
+Original Source
+--------------------
+
+This version is a fork of php-stemmer hosted on Google Code here:
+http://code.google.com/p/php-stemmer/
