@@ -32,7 +32,7 @@ In the following sample, the sources for an extension are in a directory named s
      # phpize
      # ./configure
      # make -C libstemmer_c
-     # make \n
+     # make
      # [sudo] make install
 
 Edit you php.ini file and add the line extension=stemmer.so
