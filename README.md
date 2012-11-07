@@ -9,10 +9,10 @@ It has a much simpler API than the stem extension found in pecl.
 Usage Example
 --------------------
 
-> <?php
->    echo stemword('cats', 'english', 'UTF_8');      # cat
->    echo stemword('stemming', 'english', 'UTF_8');  # stem
-> ?>
+    <?php \n
+        echo stemword('cats', 'english', 'UTF_8');      # cat  \n
+        echo stemword('stemming', 'english', 'UTF_8');  # stem \n
+    ?>
 
 Install
 --------------------
@@ -26,13 +26,14 @@ For ubuntu/debian you can use apt-get install php5-dev.
 The phpize command is used to prepare the build environment for a PHP extension.
 
 In the following sample, the sources for an extension are in a directory named stemmer-php:
-> tar -xzf php-stemmer-*.tar.gz
-> cd php-stemmer
-> phpize
-> ./configure
-> make -C libstemmer_c
-> make
-> [sudo] make install
+
+     # tar -xzf php-stemmer-*.tar.gz \n
+     # cd php-stemmer \n
+     # phpize \n
+     # ./configure \n
+     # make -C libstemmer_c \n
+     # make \n
+     # [sudo] make install \n
 
 Edit you php.ini file and add the line extension=stemmer.so
 
