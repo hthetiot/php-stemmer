@@ -12,6 +12,7 @@
 \#*#
 
 # generated files
+*.a
 *.o
 *.lo
 *.la
@@ -19,3 +20,27 @@
 .libs
 build
 modules
+Makefile
+Makefile.global
+Makefile.objects
+acinclude.m4
+aclocal.m4
+autom4te.cache/output.0
+autom4te.cache/requests
+autom4te.cache/traces.0
+build/libtool.m4
+build/mkdep.awk
+build/shtool
+config.guess
+config.h
+config.h.in
+config.log
+config.status
+config.sub
+configure
+configure.in
+libstemmer_c/stemwords
+libtool
+ltmain.sh
+run-tests.php
+
