@@ -18,11 +18,12 @@
 *.la
 .deps
 .libs
-build
-modules
+build/
+modules/
 Makefile
 Makefile.global
 Makefile.objects
+Makefile.fragments
 acinclude.m4
 aclocal.m4
 autom4te.cache/output.0
