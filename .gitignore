@@ -43,4 +43,8 @@ libstemmer_c/stemwords
 libtool
 ltmain.sh
 run-tests.php
+config.nice
+install-sh
+missing
+mkinstalldirs
 
