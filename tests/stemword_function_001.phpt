@@ -6,4 +6,4 @@ stemword() function - basic test for stemword()
 var_dump(implode(', ', stemword(array('dakpannen','balletje'), 'dutch', 'UTF_8' )));
 ?>
 --EXPECT--
-string(11) "dakpan, bal"
+string(16) "dakpann, balletj"
