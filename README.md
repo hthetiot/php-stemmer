@@ -27,7 +27,7 @@ The phpize command is used to prepare the build environment for a PHP extension.
 
 In the following sample, the sources for an extension are in a directory named stemmer-php:
 
-     # glit clone git@github.com:hthetiot/php-stemmer.git
+     # git clone https://github.com/hthetiot/php-stemmer.git
      # cd php-stemmer
      # phpize
      # ./configure
