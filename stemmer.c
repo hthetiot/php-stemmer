@@ -54,26 +54,26 @@ PHP_FUNCTION(stemword)
     if(Z_TYPE_P(arg) == IS_ARRAY)
     {
       array_init(return_value);
-      zval **data;
+      zval *data;
       HashTable *arr_hash;
       HashPosition pointer;
       int array_count;
       arr_hash = Z_ARRVAL_P(arg);
       array_count = zend_hash_num_elements(arr_hash);
       for( zend_hash_internal_pointer_reset_ex(arr_hash,&pointer);
-           zend_hash_get_current_data_ex(arr_hash,(void **)&data, &pointer)==SUCCESS;
+           zend_hash_get_current_data_ex(arr_hash,(void *)&data)==SUCCESS;
            zend_hash_move_forward_ex(arr_hash,&pointer) ){
                   
           const sb_symbol *stemmed = "";
-          if(Z_TYPE_PP(data) == IS_STRING){
-            stemmed = sb_stemmer_stem(stemmer, Z_STRVAL_PP(data), Z_STRLEN_PP(data));
+          if(Z_TYPE_P(data) == IS_STRING){
+            stemmed = sb_stemmer_stem(stemmer, Z_STRVAL_P(data), Z_STRLEN_P(data));
           }
-          add_next_index_string(return_value,stemmed,1);         
+          add_next_index_string(return_value,stemmed);         
       }
     }else{
       convert_to_string(arg);    
       const sb_symbol *stemmed = sb_stemmer_stem(stemmer, Z_STRVAL_P(arg), Z_STRLEN_P(arg));
-      if(stemmed)ZVAL_STRING( return_value, stemmed, 1);
+      if(stemmed)ZVAL_STRING( return_value, stemmed);
     }
     sb_stemmer_delete(stemmer);
     
