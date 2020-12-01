@@ -10,3 +10,7 @@ extern zend_module_entry stemmer_module_entry;
 #define phpext_stemmer_ptr &stemmer_module_entry
 
 #endif
+
+#ifndef TSRMLS_CC
+#define TSRMLS_CC
+#endif
