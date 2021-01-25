@@ -6,8 +6,11 @@
 #include "php_stemmer.h"
 #include "libstemmer_c/include/libstemmer.h"
 
+ZEND_BEGIN_ARG_INFO_EX(arginfo_void, 0, 0, 0)
+ZEND_END_ARG_INFO()
+
 static zend_function_entry stemmer_functions[] = {
-    PHP_FE(stemword, NULL)
+    PHP_FE(stemword, arginfo_void)
     {NULL, NULL, NULL}
 };
 
